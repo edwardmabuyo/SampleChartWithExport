@@ -4,6 +4,7 @@
   "description": "Using angular-google-chart and json-to-csv",
   "main": "index.js",
   "scripts": {
+    "init": "npm install && bower install --allow-root",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +18,11 @@
   },
   "homepage": "https://github.com/edwardmabuyo/SampleChartWithExport#readme",
   "dependencies": {
-    "angular-google-chart": "^0.1.0",
-    "bower": "^1.7.9"
+    "angular": "^1.5.8",
+    "angular-chart.js": "^1.0.0",
+    "bootstrap": "^3.3.7",
+    "bower": "^1.7.9",
+    "chart.js": "^2.2.1",
+    "jquery": "^3.1.0"
   }
 }

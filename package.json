@@ -1,0 +1,23 @@
+{
+  "name": "samplechartwithexport",
+  "version": "1.0.0",
+  "description": "Using angular-google-chart and json-to-csv",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edwardmabuyo/SampleChartWithExport.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edwardmabuyo/SampleChartWithExport/issues"
+  },
+  "homepage": "https://github.com/edwardmabuyo/SampleChartWithExport#readme",
+  "dependencies": {
+    "angular-google-chart": "^0.1.0",
+    "bower": "^1.7.9"
+  }
+}

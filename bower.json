@@ -1,0 +1,20 @@
+{
+  "name": "samplechartwithexport",
+  "description": "Using angular-google-chart and json-to-csv",
+  "main": "app.js",
+  "authors": [
+    "Edward Mabuyo <edwardmabuyo@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/edwardmabuyo/SampleChartWithExport",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "json-export-excel": "ng-json-export-excel#^1.0.2"
+  }
+}

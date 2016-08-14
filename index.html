@@ -1,0 +1,39 @@
+<head>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+    <!--Common plugin-->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!--JSON to Excel-->
+    <script src="bower_components/file-saver/FileSaver.min.js"></script>
+    <script src="bower_components/json-export-excel/dest/json-export-excel.min.js"></script>
+
+    <!--Chart plugin-->
+    <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
+
+
+    <script src="app.js"></script>
+
+    <div class="container" ng-app="app" ng-controller="PieCtrl">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <canvas id="pie" class="chart chart-pie" height="400"
+                    chart-data="data" chart-labels="labels" chart-dataset-override="datasetOverride"
+                    chart-options="options">
+                </canvas>
+            </div>
+        </div>
+        <div class="row text-center">
+            <a class="btn btn-primary" ng-click="exportToImage()">Export To Image</a>
+            <button
+                ng-json-export-excel
+                data="jsonData"
+                report-fields="{Department: 'Department', NoOfEmployees: 'Number of Employees'}" filename="myFileName"
+            type="button" class="btn btn-info">Export to CSV</button>
+        </div>
+    </div>
+</body>
